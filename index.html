@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+    <input type="radio" name="page" id="login-page" checked="checked" />
+    <input type="radio" name="page" id="signup-page" />
+
+    <section class="main-container">
+        <div class="left-container">
+           
+        </div>
+<!-- Login Page -->
+        <div class="login-form">
+            <div class="section-title">
+                <h1>Login</h1>
+                <p>Welcome back! Please enter your details.</p>
+            </div>
+            <form class="form-container">
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" />
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" />
+                </div>
+                <div class="remember-container">
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="remember" id="remember" />
+                        <label for="remember">Remember me</label>
+                    </div>
+
+                    <a href="#">Forgot password</a>
+                    
+                </div>
+                <button>Sign in</button>
+
+                <div class="divider">
+                    <p>or continue with</p>
+                </div>
+
+                <div class="social-logins-container">
+                    <a href="#">
+                        <div class="social">
+                        <i class="fab fa-google" aria-hidden="true"></i>
+                        <span class="sr-only">Sign in with Google</span>
+                        <p>Google</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        <span class="sr-only">Sign in with Facebook</span>
+                        <p>Facebook</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="switch">
+                    Don't have an account?
+                    <label for="signup-page"> Sign up</label></p>
+                </div>
+            </form>
+        </div>
+<!-- Signup page -->
+        <div class="signup-form">
+            <div class="section-title">
+                <h1>Create Account</h1>
+                <p>Start your journey with us today.</p>
+            </div>
+            <form class="form-container">
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your full name" />
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email" />
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Enter your password" />
+                </div>
+                <div class="input-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="password" id="password" placeholder="Re-enter your password" />
+                </div>
+                <div class="remember-container">
+                    <div class="checkbox-group">
+                        <input type="checkbox" name="agree" id="agree" />
+                        <label for="agree">I agree to the <a href="#">Terms &amp; Conditions</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    
+                </div>
+                <button>Create Account</button>
+
+                <div class="divider">
+                    <p>or sign up with</p>
+                </div>
+
+                <div class="social-logins-container">
+                    <a href="#">
+                        <div class="social">
+                        <i class="fab fa-google" aria-hidden="true"></i>
+                        <span class="sr-only">Sign up with Google</span>
+                        <p>Google</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="social">
+                        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                        <span class="sr-only">Sign up with Facebook</span>
+                        <p>Facebook</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="switch">
+                    Already have an account?
+                    <label for="login-page"> Sign in</label></p>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
